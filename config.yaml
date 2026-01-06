@@ -1,0 +1,16 @@
+# Screen Logger 設定
+
+# 除外設定（プライバシー保護）
+exclude:
+  # 除外するアプリ名
+  apps:
+    - "1Password"
+    - "Keychain Access"
+    - "System Preferences"
+    - "System Settings"
+
+  # 除外するウィンドウタイトルパターン（部分一致、大文字小文字区別なし）
+  window_patterns:
+    - "password"
+    - "secret"
+    - "credential"

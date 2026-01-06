@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+
+# Project runtime
+logs/
+reports/
+tmp/
+*.log
+
+# Local plist (use .example as template)
+com.user.screenlogger.plist
+
+# Specify template files
+.specify/
+.github/
+specs/

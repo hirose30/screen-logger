@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.screenlogger</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>{{UV_PATH}}</string>
+        <string>run</string>
+        <string>--project</string>
+        <string>{{PROJECT_PATH}}</string>
+        <string>capture_screen.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>{{PROJECT_PATH}}</string>
+
+    <key>StartInterval</key>
+    <integer>60</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>{{PROJECT_PATH}}/logs/stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>{{PROJECT_PATH}}/logs/stderr.log</string>
+</dict>
+</plist>
